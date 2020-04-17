@@ -1,0 +1,8 @@
+baseURL: https://www.ericproberts.dev
+disablePathToLower: true
+languageCode: en-us
+title: Eric Roberts - A Blog
+markup:
+    highlight:
+        style: igor
+        noClasses: false

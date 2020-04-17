@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <h1>All Posts</h1>
+    <div>
+        <ul>
+            {{ range .Pages.ByPublishDate }}
+                <li><a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} {{.Title}}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}

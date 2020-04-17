@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS }}
+<html>
+    <head>
+        <title>Eric Roberts - A Blog</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <meta name="description" content="A Blog">
+        <meta property="og:description" content="A Blog">
+        <meta name="author" content="Eric Roberts">
+
+        <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" />
+        <link rel="alternate" type="application/rss+xml" title="Eric Roberts - A Blog" href="{{.Site.BaseURL}}posts/index.xml" />
+    </head>
+
+    <body>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="{{ .Site.BaseURL }}" class="site-avatar">
+                        <img src="https://www.ericproberts.dev/avatar.png" />
+                    </a>
+
+                    <div class="site-info">
+                        <h1 class="site-name">
+                            <a href="{{ .Site.BaseURL }}">Eric Roberts</a>
+                        </h1>
+                        <p class="site-description">A Blog</p>
+                    </div>
+
+                    <nav>
+                        <a href="{{ .Site.BaseURL }}">Blog</a>
+                        <a href="{{ .Site.BaseURL }}about">About</a>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div id="main" role="main" class="container">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    <a href="https://github.com/three/"><i class="svg-icon github"></i></a>
+                    <a href="https://www.linkedin.com/in/ericroberts14"><i class="svg-icon linkedin"></i></a>
+                    <a href="/posts/index.xml"><i class="svg-icon rss"></i></a>
+                    <div>
+                        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

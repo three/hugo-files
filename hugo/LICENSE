@@ -1,22 +1,17 @@
-# Hugo Files
+The contents of this blog are licensed under a Creative Commons Attribution 4.0
+International license. More information about this license is available at
+https://creativecommons.org/licenses/by/4.0/. This includes everything in the
+/_posts/ directory, but not the HTML, CSS or other code used to build and
+render the blog.
 
-This repository contains the layout and configuration files I use to generate
-[ericproberts.dev][blog]. I don't keep the repository that contains my blog
-public, since I decided not to make unfinishd work or draft posts public. This
-repository contains everything expcept the `content` and `static` directories.
+------
 
-[blog]: https://www.ericproberts.dev/
+The Jekyll Now theme is licensed under the below MIT license. This includes the
+CSS, HTML and other code including any modifications made. This does not include
+the contents of the /_posts/ directory.
 
-The layout and CSS are based on [Jekyll Now][now].
-
-[now]: https://github.com/barryclark/jekyll-now
-
-## LICENSE
-
-```
 The MIT License (MIT)
 
-Copyright (c) 2020 Eric Roberts
 Copyright (c) 2015 Barry Clark
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -35,4 +30,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```

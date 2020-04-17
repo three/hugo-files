@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <div class="posts">
+        {{ range first 5 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+            <article class="post">
+                <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
+                <div class="entry"><p>{{.Summary}}</p></div>
+                <a href="{{.Permalink}}" class="read-more">Read More</a>
+            </article>
+        {{ end }}
+    </div>
+    <div>
+        <p><a href="/posts">More posts...</a></p>
+    </div>
+{{ end }}
